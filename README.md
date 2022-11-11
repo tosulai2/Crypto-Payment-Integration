@@ -17,13 +17,16 @@ Make sure to install streamlit and web3 library
 ## Usage
 
 This is what the streamlit app looks like after selecting a fintech professional and a set number of hours:
-
+![1](https://user-images.githubusercontent.com/37928357/201269788-0dc8028e-bd01-4213-8abb-b5a91cc73a82.png)
 
 This is Ganache page showing that the account balance is reduced from 100 eth to the new balance after the transaction:
+![2](https://user-images.githubusercontent.com/37928357/201269807-da44d1c0-5f76-4f3f-b897-b9accb9b118e.png)
 
 This is a screenshot of the transaction showing in Ganache:
+![3](https://user-images.githubusercontent.com/37928357/201269848-2c7ae853-f9ac-4cfa-95fe-461647c5d04a.png)
 
 This is further details of the transaction showing up in Ganache:
+![4](https://user-images.githubusercontent.com/37928357/201269868-39e7dd77-ca6c-41f4-a0f5-88bfa096bda1.png)
 
 Libraries used: os, bip44, web3, streamlit, dataclasses, typing
 
