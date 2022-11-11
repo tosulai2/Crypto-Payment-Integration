@@ -79,7 +79,10 @@ w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 # @TODO:
 # From `crypto_wallet.py import the functions generate_account, get_balance,
 #  and send_transaction
-# YOUR CODE HERE
+from crypto_wallet import generate_account
+from crypto_wallet import get_balance
+from crypto_wallet import send_transaction
+
 
 ################################################################################
 # Fintech Finder Candidate Information
@@ -130,12 +133,12 @@ st.sidebar.markdown("## Client Account Address and Ethernet Balance in Ether")
 
 # @TODO:
 #  Call the `generate_account` function and save it as the variable `account`
-# YOUR CODE HERE
+account = generate_account()
 
 ##########################################
 
 # Write the client's Ethereum account address to the sidebar
-st.sidebar.write(account.address)
+st.sidebar.write("Account address is: ", account.address)
 
 ##########################################
 # Step 1 - Part 5:
@@ -146,7 +149,8 @@ st.sidebar.write(account.address)
 # @TODO
 # Call `get_balance` function and pass it your account address
 # Write the returned ether balance to the sidebar
-# YOUR CODE HERE
+balance = get_balance(w3, account.address)
+st.sidebar.write("Account balance is: ", balance)
 
 ##########################################
 
